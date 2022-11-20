@@ -1,4 +1,5 @@
 from faker import Faker
+import json
 
 fake = Faker()
 color_list = []
@@ -12,3 +13,6 @@ def remove_dups(color_lst):
   return color_lst
 
 color_dict = {color: len(color) for color in color_list}
+
+with open("./data/color.json", 'w') as json_file:
+  json.dump(color_dict, json_file, indent=2)
