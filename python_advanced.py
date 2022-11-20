@@ -16,3 +16,9 @@ color_dict = {color: len(color) for color in color_list}
 
 with open("./data/color.json", 'w') as json_file:
   json.dump(color_dict, json_file, indent=2)
+
+with open("./data/color.json", "r") as json_file:
+  json_color_dict = json.load(json_file)
+  for color, color_len in json_color_dict.items():
+    if color_len > 4:
+      print(f"{color}: {color_len}")
