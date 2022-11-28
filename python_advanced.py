@@ -1,6 +1,7 @@
 from faker import Faker
 import json
 
+
 fake = Faker()
 color_list = []
 
@@ -20,7 +21,7 @@ def remove_dups(color_lst):
         color_lst.remove(other_color)
       counter += 1
   return color_lst
-  
+
   # set(color_lst)
   # return color_lst
 
