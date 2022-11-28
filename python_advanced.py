@@ -9,6 +9,8 @@ for i in range(20):
   color_list.append(color)
 
 def remove_dups(color_lst):
+  if type(color_lst) == str:
+    return color_lst
   var_storage = None
   counter = 0
   for color in color_lst:
@@ -16,8 +18,9 @@ def remove_dups(color_lst):
     for other_color in color_lst:
       if var_storage == other_color and counter > 1:
         color_lst.remove(other_color)
-      counter += 1  
-
+      counter += 1
+  return color_lst
+  
   # set(color_lst)
   # return color_lst
 
