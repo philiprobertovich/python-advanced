@@ -1,8 +1,10 @@
 from python_advanced import remove_dups
+from faker import Faker
+import pytest
 
 @pytest.mark.parametrize("color_lst, return_value", [
-  (["green", "green", "green", "blue", "blue", "blue", "red"], {"green","blue","red"})
-  ([], {})
+  (["green", "green", "green", "blue", "blue", "blue", "red"], {"green","blue","red"}),
+  ([], {}),
   ("blue", {"blue"})
 ])
 

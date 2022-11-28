@@ -2,7 +2,7 @@
 
 ### By Philip Kendall
 
-#### This project creates fake colors, removes any duplicates, dumps the infomation to JSON file, and uses Pytest to test remove_dups() function
+#### This project creates fake colors, removes any duplicates, dumps the infomation to a JSON file, and uses Pytest to test remove_dups() function
 
 ## Technologies Used
 
